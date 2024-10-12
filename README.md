@@ -1,6 +1,6 @@
 # qinglongsdk
 
-青龙api的python SDK
+青龙api的pythonSDK
 
 具体文档
 
