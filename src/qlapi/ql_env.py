@@ -57,18 +57,13 @@ class qlenv(ql_api):
     def search(self, env):
         """
         获取环境变量
-
         :param env: 环境变量名
         :return: zip(环境变量ID,环境变量值) 使用for(id,value) in get_env(env)
         """
         url = f"{self.url}/open/envs?searchValue={env}"
         res = self.s.get(url=url).json().get("data")
-        id_list = []
-        value_list = []
-        for i in res:
-            id_list.append(i.get('id'))
-            value_list.append(i.get('value'))
-        return zip(id_list, value_list)
+        return res if res else []   
+        
 
     def update(self, value, name, id, remarks=""):
         """
