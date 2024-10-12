@@ -1,4 +1,4 @@
-# qinglongapi
+# qinglongsdk
 
 青龙api的python SDK
 
