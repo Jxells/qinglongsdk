@@ -32,4 +32,4 @@ ql_env.list()
 
 https://qinglong.ukenn.top/#/
 
-很多还没有完善，欢迎pr
+
