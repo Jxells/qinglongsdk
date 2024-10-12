@@ -29,7 +29,7 @@ class qlenv(ql_api):
 
     def add(self, new_env, value ,remarks=""):
         """
-        添加环境变量
+        添加新的环境变量
 
         :param new_env: 新环境变量名
         :param value: 新环境变量值
