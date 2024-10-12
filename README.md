@@ -11,7 +11,7 @@ https://yuxian158.github.io/qinglong-api/
 安装
 
 ```
-pip install qinglongapi
+pip install qinglongsdk
 ```
 
 所有模块使用方法大同小异，以环境变量模块为例:
