@@ -2,9 +2,7 @@
 
 青龙api的pythonSDK
 
-具体文档
 
-https://yuxian158.github.io/qinglong-api/
 
 使用方法
 
