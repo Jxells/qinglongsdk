@@ -15,7 +15,7 @@ pip install qinglongsdk
 所有模块使用方法大同小异，以环境变量模块为例:
 
 ```
-from qlapi import qlenv
+from qinglongsdk import qlenv
 
 ql_env = qlenv(
     url="12.22.43.23",   #青龙面板IP地址(不包含http://)
