@@ -78,7 +78,6 @@ class qlenv(ql_api):
         url = f"{self.url}/open/envs"
         data = {"value": value, "name": name, "remarks": remarks, "id": id}
         data = json.dumps(data)
-        print(data)
         res = self.s.put(url=url, data=data).json()
         return res
 
