@@ -23,7 +23,7 @@ class ql_api:
     def __get_ql_token(self):
         url = f"{self.url}/open/auth/token?client_id={self.client_id}&client_secret={self.client_secret}"
         res = self.s.get(url)
-        print(self._get_req_results(res))
+        # print(self._get_req_results(res))
         res = res.json()
         token = res["data"]['token']
         self.s.headers.update({"authorization": "Bearer " + str(token)})
@@ -32,7 +32,9 @@ class ql_api:
     @staticmethod
     def _get_req_results(res: Response):
         if res.status_code == 200:
-            return "青龙登录成功！"
+            # 青龙登录成功！
+            # return "ql login success"
+            return True
         else:
             try:
                 return res.json().get("message")
